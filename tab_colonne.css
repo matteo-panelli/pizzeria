@@ -1,0 +1,30 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+  float: left;
+  width: 25%;
+  height: 800px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  background-color: #f1f1f1;
+  height: 800px;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
