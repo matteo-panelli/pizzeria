@@ -1,94 +1,60 @@
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav_title {
-  display:flex; 
-  justify-content: center;
-  background-color: #f2f2f3;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #ffffff;
-  display:flex;
-  align-items: center;
-}
-
-.navbar a {
-  font-size: 25px;
-  color: black;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.dropdown {
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 25px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 40px;
-  background-color: inherit;
-  font-family: inherit;
+* {
   margin: 0;
+  padding: 0;
 }
 
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
- 
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ffffff;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.center-items{
+.container {
   display: flex;
-  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  color: rgb(63, 160, 167);
 }
 
-a{
-  color:white
+.gameField {
+  width: 300px;
+  height: 300px;
 }
 
-td{
-  font-size:25px;
-}
-ul{
-  font-size:25px;
-}
-p{
-  font-size:25px
+.cells {
+  display: flex;
 }
 
+.cell {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(30, 211, 172);
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.restart {
+  margin-top: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid rgb(30, 211, 172);
+}
+
+.restart:hover {
+  background-color: rgb(30, 211, 172);
+  color: white;
+  border: 1px solid white;
+}
